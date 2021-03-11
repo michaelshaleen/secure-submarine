@@ -60,7 +60,7 @@ Do this for the secrets route to achieve these results:
 
 A user like `Captain Borodin` with password `shark` is be to visit `http://localhost:3000/#/secrets` to see all of the secrets! That's no good! There's a secret in there that calls him weird!
 
-You should see the clearance level in the console log inside of secrets GET request in `secrets.router.js`. Now fix the query in `secrets.router.js` so that it uses the clearance level to determine which secrets to return.
+You should see the clearance level in the console log inside of secrets GET request in `secrets.router.js`. Now fix the query in `secrets.router.js` so that it uses the clearance level to determine which s crets to return.
 
 - [ ] A user like `Captain Borodin` with password `shark` should no longer be able to see any secrets above his `clearance_level` which is `10`.
 - [ ] A user like `Admiral Greer` with password `tuna` should still be able to visit `http://localhost:3000/#/secrets` to see all of the secrets.
