@@ -1,10 +1,18 @@
 const express = require('express');
 const pool = require('../modules/pool');
 const router = express.Router();
+const {rejectUnauthenticated} = require('../modules/authentication-middleware');
+
 
 router.get('/', (req, res) => {
+
   // what is the value of req.user????
   console.log('req.user:', req.user);
+  console.log("auth", req.isAuthenticated())
+  if(!req.isAuthenticated()){
+    res.sendStatus(403);
+  }
+  
 
   pool
     .query(`SELECT * FROM "secret";`)

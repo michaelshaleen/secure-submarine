@@ -51,8 +51,8 @@ router.get('/', rejectUnauthenticated, (req, res) => {
 
 Do this for the secrets route to achieve these results:
 
-- [ ] An unauthenticated user visiting `http://localhost:5000/api/secrets` should get a `403` or `forbidden` error instead of seeing the secrets.
-- [ ] A user like `Admiral Greer` with password `tuna` should still be able to visit `http://localhost:3000/#/secrets` to see all of the secrets.
+- [x] An unauthenticated user visiting `http://localhost:5000/api/secrets` should get a `403` or `forbidden` error instead of seeing the secrets.
+- [x] A user like `Admiral Greer` with password `tuna` should still be able to visit `http://localhost:3000/#/secrets` to see all of the secrets.
 
 #### No Secrets Above Clearance Level (Authorization)
 
@@ -156,9 +156,9 @@ Admiral Greer and Lieutenant Ryan still have the same passwords as before, but i
     While you're in your new `.env` file, take the time to replace `superDuperSecret` with some long random string like `25POUbVtx6RKVNWszd9ERB9Bb6` to keep your application secure. Here's a site that can help you: [https://passwordsgenerator.net/](https://passwordsgenerator.net/).
 
 ---
-
+## LIES
 ## Prerequisites
-
+<!-- 
 Before you get started, make sure you have the following software installed on your computer:
 
 - [Node.js](https://nodejs.org/en/)
@@ -266,4 +266,4 @@ This code is also heavily commented. We recommend reading through the comments, 
 
 ## Update Documentation
 
-Customize this ReadMe and the code comments in this project to read less like a starter repo and more like a project. Here is an example: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+Customize this ReadMe and the code comments in this project to read less like a starter repo and more like a project. Here is an example: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2 -->
